@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+/* Forza l'altezza massima su tutto */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Gestione del contenitore principale di Angular */
+app-root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* 100% dell'altezza del dispositivo */
+}
