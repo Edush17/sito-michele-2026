@@ -1,74 +1,80 @@
 .foto-profilo-cerchio {
-    /* Il percorso punta alla cartella public (che in Angular 18+ si mappa alla root) */
-    background-image: url('/images/michele-profilo.jpeg');
-    
-    /* Ridimensiona la foto affinché copra tutto il cerchio senza distorcersi */
-    background-size: cover;
-    
-    /* Centra la foto (orizzontalmente e verticalmente) all'interno del cerchio */
-    background-position: center;
-    
-    /* Assicuriamoci che non ci siano ripetizioni */
-    background-repeat: no-repeat;
-    
-    /* Togliamo il padding Bootstrap che avevamo prima, ora non serve più */
-    padding: 0 !important; 
+  /* Il percorso punta alla cartella public (che in Angular 18+ si mappa alla root) */
+  background-image: url("/images/michele-profilo.jpeg");
 
-    /* Palette di colori caldi e naturali per un'atmosfera terapeutica */
-:root {
-  --primary-warm: #4a6741; /* Un verde salvia profondo e calmante */
-  --secondary-warm: #767c6f; /* Un grigio-verde morbido */
-  --light-bg-warm: #faf9f6; /* Un crema molto delicato, non bianco puro */
-  --dark-warm: #4a4a4a; /* Un grigio scuro caldo, meno aggressivo del nero */
-  --accent-warm: #c5a076; /* Un ocra caldo per dettagli */
-}
+  /* Ridimensiona la foto affinché copra tutto il cerchio senza distorcersi */
+  background-size: cover;
 
-/* Sfondo della sezione non standard */
-.bg-light-artistic {
+  /* Centra la foto (orizzontalmente e verticalmente) all'interno del cerchio */
+  background-position: center;
+
+  /* Assicuriamoci che non ci siano ripetizioni */
+  background-repeat: no-repeat;
+
+  /* Togliamo il padding Bootstrap che avevamo prima, ora non serve più */
+  padding: 0 !important;
+
+  /* Palette di colori caldi e naturali per un'atmosfera terapeutica */
+  :root {
+    --primary-warm: #4a6741; /* Un verde salvia profondo e calmante */
+    --secondary-warm: #767c6f; /* Un grigio-verde morbido */
+    --light-bg-warm: #faf9f6; /* Un crema molto delicato, non bianco puro */
+    --dark-warm: #4a4a4a; /* Un grigio scuro caldo, meno aggressivo del nero */
+    --accent-warm: #c5a076; /* Un ocra caldo per dettagli */
+  }
+
+  /* Sfondo della sezione non standard */
+  .bg-light-artistic {
     background-color: var(--light-bg-warm);
     /* Aggiungi un motivo delicato e astratto in SVG come sfondo, se vuoi un tocco in più.
        Es: background-image: url('data:image/svg+xml,...'); */
-}
+  }
 
-/* Ridefinizione dei colori dei testi Bootstrap per la sezione */
-.text-primary-warm { color: var(--primary-warm) !important; }
-.text-secondary { color: var(--secondary-warm) !important; }
-.text-dark-warm { color: var(--dark-warm); }
+  /* Ridefinizione dei colori dei testi Bootstrap per la sezione */
+  .text-primary-warm {
+    color: var(--primary-warm) !important;
+  }
+  .text-secondary {
+    color: var(--secondary-warm) !important;
+  }
+  .text-dark-warm {
+    color: var(--dark-warm);
+  }
 
-/* Il contenitore della quote: forma organica e texture */
-.quote-container-artistic {
+  /* Il contenitore della quote: forma organica e texture */
+  .quote-container-artistic {
     background-color: #ffffff;
     /* Più padding per far respirare la citazione */
-    padding: 60px 40px; 
-    
+    padding: 60px 40px;
+
     /* Forma organica: bordi morbidi, non perfettamente dritti.
        Usiamo angoli sfocati e una forma leggermente asimmetrica. */
     border-radius: 50% 10% 50% 10% / 10% 50% 10% 50%;
-    
+
     /* Ombra organica, meno 'tecnica' e più diffusa */
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
-    
+
     /* Aggiungi una texture impercettibile, come carta fatta a mano,
        per un effetto wabi-sabi.
        Es: background-image: url('/images/paper-texture.png');
        opacity: 0.8; */
-}
+  }
 
-/* L'icona della citazione: ricolorata e ammorbidita */
-.quote-icon-warm {
+  /* L'icona della citazione: ricolorata e ammorbidita */
+  .quote-icon-warm {
     color: var(--primary-warm);
     /* Una sfumatura delicata per dare profondità organica */
     filter: drop-shadow(0 2px 5px rgba(74, 103, 65, 0.2));
-}
+  }
 
-/* Tipografia della citazione: più grande e personale */
-.quote-text-large {
+  /* Tipografia della citazione: più grande e personale */
+  .quote-text-large {
     font-size: 1.5rem; /* Più grande dell'originale */
     letter-spacing: -0.01em; /* Unisci leggermente le lettere per coesione */
-}
+  }
 
-/* Elemento decorativo: una linea organica che evoca il flusso */
-.quote-divider {
+  /* Elemento decorativo: una linea organica che evoca il flusso */
+  .quote-divider {
     height: 3px;
     width: 80px;
     background-color: var(--accent-warm);
@@ -76,5 +82,5 @@
     border-radius: 2px;
     /* Aggiungi un effetto sfocato per un tocco più etereo */
     filter: blur(1px);
-}
+  }
 }
