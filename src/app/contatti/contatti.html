@@ -1,1 +1,106 @@
-<p>contatti works!</p>
+<section class="py-3 bg-light-artistic">
+  <div class="container py-3">
+    <div class="text-center mb-5">
+      <h1 class="display-4 fw-bold text-primary-warm">
+        Iniziamo un percorso insieme
+      </h1>
+      <p class="lead text-secondary">
+        Prenderti cura di te è il primo passo verso l'autorealizzazione.
+      </p>
+    </div>
+
+    <div class="row g-5">
+      <div class="col-lg-7">
+        <div class="card border-0 shadow-organic p-4 p-md-5">
+          <h3 class="mb-4 text-dark-warm">Scrivimi un messaggio</h3>
+          <form (ngSubmit)="inviaMessaggio()">
+            <div class="mb-3">
+              <label class="form-label">Nome e Cognome</label>
+              <input
+                type="text"
+                class="form-control custom-input"
+                [(ngModel)]="nome"
+                name="nome"
+                placeholder="Il tuo nome"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control custom-input"
+                [(ngModel)]="email"
+                name="email"
+                placeholder="nome@esempio.com"
+                required
+              />
+            </div>
+            <div class="mb-4">
+              <label class="form-label">Come posso aiutarti?</label>
+              <textarea
+                class="form-control custom-input"
+                [(ngModel)]="messaggio"
+                name="messaggio"
+                rows="5"
+                placeholder="Scrivi qui il tuo messaggio..."
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="btn btn-primary-warm btn-lg w-100 shadow-sm"
+            >
+              Invia Messaggio
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="col-lg-5">
+        <div class="mb-5">
+          <h3 class="text-dark-warm mb-4">Recapiti</h3>
+          <div class="d-flex align-items-center mb-3">
+            <i class="bi bi-geo-alt-fill text-primary-warm fs-3 me-3"></i>
+            <div>
+              <p class="mb-0 fw-bold">Studio Professionale</p>
+              <p class="text-secondary mb-0">
+                Via di Val Melaina 2, 00139 Roma
+              </p>
+            </div>
+          </div>
+          <div class="d-flex align-items-center mb-3">
+            <i class="bi bi-telephone-fill text-primary-warm fs-3 me-3"></i>
+            <div>
+              <p class="mb-0 fw-bold">Telefono</p>
+              <p class="text-secondary mb-0">+39 06 123 4567</p>
+            </div>
+          </div>
+          <div class="d-flex align-items-center mb-3">
+            <i class="bi bi-envelope-at-fill text-primary-warm fs-3 me-3"></i>
+            <div>
+              <p class="mb-0 fw-bold">Email</p>
+              <p class="text-secondary mb-0">
+                michele.psicologo&#64;esempio.it
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="rounded-4 overflow-hidden shadow-sm border"
+          style="height: 300px"
+        >
+          <iframe
+            width="100%"
+            height="100%"
+            style="border: 0"
+            loading="lazy"
+            allowfullscreen
+            src="https://maps.google.com/maps?q=Via%20di%20Val%20Melaina%202,%20Roma&t=&z=15&ie=UTF8&iwloc=&output=embed"
+          >
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
