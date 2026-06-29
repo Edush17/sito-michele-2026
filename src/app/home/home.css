@@ -21,7 +21,7 @@ blockquote{margin:0}
 .quote-card-featured::before{font-size:4.5rem;left:50%;opacity:.18;top:1rem;transform:translateX(-50%)}
 .quote-card-featured blockquote{color:var(--text);font-size:clamp(1.35rem,2.8vw,1.85rem);font-weight:600;line-height:1.55;padding-top:2.2rem;white-space:pre-line}
 .quote-card-featured figcaption{color:var(--green);font-size:.82rem;font-weight:760;letter-spacing:.12em;margin-top:1.25rem;text-transform:uppercase}
-.hero-actions{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:2rem}
+.hero-actions{display:flex;flex-wrap:wrap;gap:.9rem;justify-content:center;margin-top:2rem}
 .btn-primary-warm{--bs-btn-bg:var(--green);--bs-btn-border-color:var(--green);--bs-btn-hover-bg:var(--green-dark);--bs-btn-hover-border-color:var(--green-dark);--bs-btn-color:#fff;--bs-btn-hover-color:#fff}
 .portrait-panel{align-items:center;display:flex;justify-content:center;margin-top:.75rem;padding:0}
 .foto-profilo-cerchio{aspect-ratio:1;background:url("/images/michele-profilo.jpeg") center/cover no-repeat;border:10px solid rgba(255,255,255,.92);border-radius:42% 58% 54% 46%/45% 42% 58% 55%;box-shadow:0 24px 64px rgba(37,99,235,.18);width:min(100%,520px)}
