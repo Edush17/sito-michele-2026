@@ -1,11 +1,14 @@
 import { Routes } from '@angular/router';
-import { Contatti } from './contatti/contatti';
-import { AppComponent } from './app.component';
 import { Home } from './home/home';
-import { Blog } from './blog/blog';
 
 export const routes: Routes = [
-    {path:'', component: Home},
-    {path:'contatti', component: Contatti},
-    {path:'blog', component: Blog}
+  { path: '', component: Home },
+  {
+    path: 'contatti',
+    loadComponent: () => import('./contatti/contatti').then((m) => m.Contatti),
+  },
+  {
+    path: 'blog',
+    loadComponent: () => import('./blog/blog').then((m) => m.Blog),
+  },
 ];

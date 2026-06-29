@@ -22,6 +22,19 @@
   background: linear-gradient(180deg, var(--color-paper), var(--color-soft));
 }
 
+.btn-primary-warm {
+  background-color: var(--color-primary);
+  color: #fff;
+  border-color: var(--color-primary);
+}
+
+.btn-primary-warm:hover {
+  background-color: var(--color-primary-hover);
+  border-color: var(--color-primary-hover);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
 /* Forza l'altezza massima su tutto */
 html, body {
     height: 100%;

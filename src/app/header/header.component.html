@@ -4,10 +4,10 @@
         <img src="images/logo_michele.png" alt="logo Michele Lollobrigida" height="50">
         <span class="brand-text">Michele Lollobrigida Psicoterapeuta</span>
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" (click)="toggleMenu()" [attr.aria-expanded]="menuOpen" aria-controls="navbarNav" aria-label="Apri menu">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="collapse navbar-collapse" [class.show]="menuOpen" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" routerLink="/">Home</a>
