@@ -1,86 +1,33 @@
-.foto-profilo-cerchio {
-  /* Il percorso punta alla cartella public (che in Angular 18+ si mappa alla root) */
-  background-image: url("/images/michele-profilo.jpeg");
-
-  /* Ridimensiona la foto affinché copra tutto il cerchio senza distorcersi */
-  background-size: cover;
-
-  /* Centra la foto (orizzontalmente e verticalmente) all'interno del cerchio */
-  background-position: center;
-
-  /* Assicuriamoci che non ci siano ripetizioni */
-  background-repeat: no-repeat;
-
-  /* Togliamo il padding Bootstrap che avevamo prima, ora non serve più */
-  padding: 0 !important;
-
-  /* Palette di colori caldi e naturali per un'atmosfera terapeutica */
-  :root {
-    --primary-warm: #4a6741; /* Un verde salvia profondo e calmante */
-    --secondary-warm: #767c6f; /* Un grigio-verde morbido */
-    --light-bg-warm: #faf9f6; /* Un crema molto delicato, non bianco puro */
-    --dark-warm: #4a4a4a; /* Un grigio scuro caldo, meno aggressivo del nero */
-    --accent-warm: #c5a076; /* Un ocra caldo per dettagli */
-  }
-
-  /* Sfondo della sezione non standard */
-  .bg-light-artistic {
-    background-color: var(--light-bg-warm);
-    /* Aggiungi un motivo delicato e astratto in SVG come sfondo, se vuoi un tocco in più.
-       Es: background-image: url('data:image/svg+xml,...'); */
-  }
-
-  /* Ridefinizione dei colori dei testi Bootstrap per la sezione */
-  .text-primary-warm {
-    color: var(--primary-warm) !important;
-  }
-  .text-secondary {
-    color: var(--secondary-warm) !important;
-  }
-  .text-dark-warm {
-    color: var(--dark-warm);
-  }
-
-  /* Il contenitore della quote: forma organica e texture */
-  .quote-container-artistic {
-    background-color: #ffffff;
-    /* Più padding per far respirare la citazione */
-    padding: 60px 40px;
-
-    /* Forma organica: bordi morbidi, non perfettamente dritti.
-       Usiamo angoli sfocati e una forma leggermente asimmetrica. */
-    border-radius: 50% 10% 50% 10% / 10% 50% 10% 50%;
-
-    /* Ombra organica, meno 'tecnica' e più diffusa */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
-
-    /* Aggiungi una texture impercettibile, come carta fatta a mano,
-       per un effetto wabi-sabi.
-       Es: background-image: url('/images/paper-texture.png');
-       opacity: 0.8; */
-  }
-
-  /* L'icona della citazione: ricolorata e ammorbidita */
-  .quote-icon-warm {
-    color: var(--primary-warm);
-    /* Una sfumatura delicata per dare profondità organica */
-    filter: drop-shadow(0 2px 5px rgba(74, 103, 65, 0.2));
-  }
-
-  /* Tipografia della citazione: più grande e personale */
-  .quote-text-large {
-    font-size: 1.5rem; /* Più grande dell'originale */
-    letter-spacing: -0.01em; /* Unisci leggermente le lettere per coesione */
-  }
-
-  /* Elemento decorativo: una linea organica che evoca il flusso */
-  .quote-divider {
-    height: 3px;
-    width: 80px;
-    background-color: var(--accent-warm);
-    margin: 30px auto 0 auto;
-    border-radius: 2px;
-    /* Aggiungi un effetto sfocato per un tocco più etereo */
-    filter: blur(1px);
-  }
-}
+:host{--green:#4a6741;--green-dark:#385230;--text:#2f342d;--muted:#697160;--paper:#faf8f2;--soft:#edf4ec;--gold:#c69c6d;--line:rgba(74,103,65,.16);display:block;color:var(--text)}
+.home-page{background:linear-gradient(180deg,var(--paper),#fff 18%,#fff 72%,var(--paper))}
+.container{max-width:1120px}
+.intro-grid{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(280px,.65fr);gap:clamp(2rem,5vw,4.5rem);align-items:center;padding:clamp(3.5rem,7vw,6.5rem) 0}
+.content-section{font-size:1.13rem;line-height:1.78}
+.content-section p{color:var(--muted);margin:0 0 1.15rem}
+.content-section strong{color:var(--text);font-weight:760}
+.content-section em{color:var(--green);font-style:italic}
+.eyebrow{color:var(--green);font-size:.78rem;font-weight:760;letter-spacing:.08em;margin-bottom:.8rem!important;text-transform:uppercase}
+h1,h2{color:var(--text);font-weight:780;line-height:1.05;margin:0 0 1.35rem}
+h1{font-size:clamp(3rem,6vw,5.6rem)}
+h2{font-size:clamp(2.35rem,4.2vw,4rem)}
+h3{color:var(--green-dark);font-size:1.15rem;font-weight:780;margin:0 0 .55rem}
+blockquote{border-left:4px solid var(--gold);color:var(--text);font-size:1.22rem;font-style:italic;line-height:1.62;margin:2rem 0 0;padding:0 0 0 1.25rem}
+.hero-actions{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:2rem}
+.btn-primary-warm{--bs-btn-bg:var(--green);--bs-btn-border-color:var(--green);--bs-btn-hover-bg:var(--green-dark);--bs-btn-hover-border-color:var(--green-dark);--bs-btn-color:#fff;--bs-btn-hover-color:#fff}
+.portrait-panel{position:relative;display:flex;justify-content:center;padding:1rem 0 3rem}
+.foto-profilo-cerchio{aspect-ratio:1;background:url("/images/michele-profilo.jpeg") center/cover no-repeat;border:10px solid rgba(255,255,255,.9);border-radius:42% 58% 54% 46%/45% 42% 58% 55%;box-shadow:0 28px 70px rgba(47,52,45,.18);width:min(100%,400px)}
+.profile-note{align-items:center;background:#fff;border:1px solid var(--line);border-radius:8px;bottom:0;box-shadow:0 18px 55px rgba(47,52,45,.1);display:flex;gap:.75rem;left:0;max-width:285px;padding:1rem 1.1rem;position:absolute}
+.profile-note i{color:var(--gold);font-size:1.35rem}
+.section-band{background:var(--paper);border:1px solid var(--line);border-radius:8px;margin:0 0 clamp(3rem,6vw,5rem);padding:clamp(1.7rem,4vw,3rem)}
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1.8rem 0 2.2rem}
+.pillar{background:#fff;border:1px solid var(--line);border-radius:8px;padding:1.25rem}
+.pillar p{font-size:1rem;line-height:1.6;margin:0}
+.wide-quote{background:#fff;border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:8px;margin-top:1.5rem;padding:1.4rem}
+.help-section{margin:0 auto clamp(3rem,6vw,5rem);max-width:880px}
+.help-list{display:grid;gap:.8rem;list-style:none;margin:1.5rem 0 0;padding:0}
+.help-list li{background:var(--soft);border-left:4px solid var(--green);border-radius:8px;color:var(--text);padding:.95rem 1.1rem}
+.closing-quote{background:linear-gradient(135deg,rgba(47,52,45,.94),rgba(74,103,65,.92)),url("/images/michele-profilo.jpeg") center/cover;padding:clamp(3.5rem,7vw,5.5rem) 0;text-align:center}
+.closing-quote i{font-size:4.8rem;opacity:.45}
+.closing-quote blockquote{border:0;color:#fff;font-size:clamp(1.45rem,3vw,2.25rem);margin:1rem auto 0;max-width:920px;padding:0;white-space:pre-line}
+@media (max-width:991.98px){.intro-grid,.pillars{grid-template-columns:1fr}.portrait-panel{order:-1}.profile-note{left:50%;transform:translateX(-50%);width:min(88%,285px)}}
+@media (max-width:575.98px){.intro-grid{padding-top:2.5rem}.content-section{font-size:1.03rem}.hero-actions .btn{width:100%}.section-band{padding:1.35rem}.closing-quote i{font-size:3.8rem}}

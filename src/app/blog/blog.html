@@ -1,1 +1,24 @@
-<p>blog works!</p>
+<section class="blog-hero">
+  <div class="container py-5">
+    <p class="eyebrow">Blog</p>
+    <h1>Approccio, relazione e percorso psicologico.</h1>
+    <p>
+      Alcuni testi per conoscere meglio il mio modo di lavorare, il modello
+      centrato sulla persona e il senso di un percorso terapeutico.
+    </p>
+  </div>
+</section>
+
+<section class="py-5">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4" *ngFor="let post of posts">
+        <article class="blog-post h-100" [id]="post.id">
+          <p class="post-category">{{ post.categoria }}</p>
+          <h2>{{ post.titolo }}</h2>
+          <p *ngFor="let paragrafo of post.paragrafi">{{ paragrafo }}</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
