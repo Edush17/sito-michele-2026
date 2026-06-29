@@ -1,11 +1,11 @@
 :host {
-  --primary-warm: #4a6741;
-  --primary-warm-dark: #385230;
-  --secondary-warm: #697160;
-  --light-bg-warm: #faf8f2;
-  --dark-warm: #2f342d;
-  --accent-warm: #c69c6d;
-  --line-warm: rgba(74, 103, 65, 0.16);
+  --primary-warm: var(--color-primary);
+  --primary-warm-dark: var(--color-primary-dark);
+  --secondary-warm: var(--color-muted);
+  --light-bg-warm: var(--color-paper);
+  --dark-warm: var(--color-text);
+  --accent-warm: var(--color-accent);
+  --line-warm: var(--color-line);
 
   display: block;
   color: var(--dark-warm);
@@ -13,7 +13,7 @@
 
 .blog-hero {
   background:
-    linear-gradient(110deg, rgba(250, 248, 242, 0.96), rgba(237, 244, 236, 0.88)),
+    linear-gradient(110deg, rgba(245, 248, 252, 0.96), rgba(238, 244, 255, 0.88)),
     url("/images/michele-profilo.jpeg");
   background-position: center;
   background-size: cover;

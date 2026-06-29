@@ -4,7 +4,9 @@
       <article class="content-section">
         <h1>Chi Sono</h1>
         <p *ngFor="let paragrafo of chiSono" [innerHTML]="paragrafo"></p>
-        <blockquote>{{ rogersBreve }}</blockquote>
+        <figure class="quote-card">
+          <blockquote>{{ rogersBreve }}</blockquote>
+        </figure>
         <div class="hero-actions">
           <a class="btn btn-primary-warm btn-lg" routerLink="/contatti">
             <i class="bi bi-calendar-heart me-2"></i>
@@ -15,10 +17,6 @@
 
       <aside class="portrait-panel">
         <div class="foto-profilo-cerchio" aria-label="Ritratto di Michele"></div>
-        <div class="profile-note">
-          <i class="bi bi-chat-quote-fill"></i>
-          <span>Un incontro autentico da persona a persona</span>
-        </div>
       </aside>
     </div>
 
@@ -34,7 +32,9 @@
         </div>
       </div>
 
-      <blockquote class="wide-quote">{{ rogersLungo }}</blockquote>
+      <figure class="quote-card quote-card-wide">
+        <blockquote>{{ rogersLungo }}</blockquote>
+      </figure>
     </article>
 
     <article class="content-section help-section">
@@ -47,10 +47,12 @@
     </article>
   </div>
 
-  <section class="closing-quote text-white">
+  <section class="closing-quote">
     <div class="container">
-      <i class="bi bi-quote"></i>
-      <blockquote>{{ citazioneLaoTse }}</blockquote>
+      <figure class="quote-card quote-card-featured">
+        <blockquote>{{ citazioneLaoTse }}</blockquote>
+        <figcaption>Lao Tse</figcaption>
+      </figure>
     </div>
   </section>
 </section>

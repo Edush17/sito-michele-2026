@@ -1,11 +1,24 @@
 .navbar-brand img {
-    height: 50px;
+  height: 50px;
+}
+
+.brand-text {
+  color: var(--color-text);
+  font-size: clamp(0.95rem, 2vw, 1.15rem);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+@media (max-width: 575.98px) {
+  .brand-text {
+    font-size: 0.65rem;
   }
+}
   
   .nav-link {
     font-weight: 500;
   }
   
   .nav-link.active {
-    color: #007bff;
+    color: var(--color-primary);
   }

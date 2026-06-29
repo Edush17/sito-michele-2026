@@ -61,5 +61,5 @@ export class Home {
     '“È così facile curarsi degli altri per ciò che io penso che siano, o vorrei che fossero, o sento che dovrebbero essere. Curarsi di una persona per quello che è, lasciando cadere le aspettative ci ciò che essa dovrebbe essere per me, lasciando cadere il desiderio modificare questa persona in armonia con le mie esigenze, è la via più difficile, ma anche la più maturante, verso una relazione intima più soddisfacente.” – Carl Rogers';
 
   citazioneLaoTse =
-    '“È come se egli ascoltasse / e un ascolto come il suo ci avvolge in un silenzio / in cui infine cominciamo a udire / ciò che siamo destinati a essere.” - Lao Tse';
+    '“È come se egli ascoltasse\ne un ascolto come il suo ci avvolge in un silenzio\nin cui infine cominciamo a udire\nciò che siamo destinati a essere.”';
 }

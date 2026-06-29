@@ -1,3 +1,27 @@
+:root {
+  --color-primary: #2563eb;
+  --color-primary-dark: #1d4ed8;
+  --color-primary-hover: #1e40af;
+  --color-text: #1e293b;
+  --color-muted: #64748b;
+  --color-paper: #f5f8fc;
+  --color-soft: #eef4ff;
+  --color-accent: #c69c6d;
+  --color-line: rgba(37, 99, 235, 0.16);
+}
+
+.text-primary-warm {
+  color: var(--color-primary);
+}
+
+.text-dark-warm {
+  color: var(--color-text);
+}
+
+.bg-light-artistic {
+  background: linear-gradient(180deg, var(--color-paper), var(--color-soft));
+}
+
 /* Forza l'altezza massima su tutto */
 html, body {
     height: 100%;
